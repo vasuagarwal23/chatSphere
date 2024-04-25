@@ -14,5 +14,5 @@ To install ChatSphere, follow these steps:
 
 ## Usage
 To run ChatSphere, execute the following commands:
-1.npm run build
-2.npm start
+1.`npm run build`
+2.`npm start`
