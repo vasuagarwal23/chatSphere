@@ -11,14 +11,11 @@ const useSignup = () => {
 		if (!success) return;
 
 		setLoading(true);
-		try {h
-            //target/api/auth/signup
-            //(target value vite.config ->proxy)
+		try {
 			const res = await fetch("/api/auth/signup", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ fullName, username, password, confirmPassword, gender }),
-                // JSON.stringify() function is used to convert this object into a JSON string format
 			});
 
 			const data = await res.json();
