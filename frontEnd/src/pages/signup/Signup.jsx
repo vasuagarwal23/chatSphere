@@ -36,6 +36,7 @@ const SignUp = () => {
 							<span className='text-base label-text'>Full Name</span>
 						</label>
 						<input
+							id="fullName"
 							type='text'
 							placeholder='John Doe'
 							className='w-full input input-bordered  h-10'
@@ -49,6 +50,7 @@ const SignUp = () => {
 							<span className='text-base label-text'>Username</span>
 						</label>
 						<input
+							id=" userName"
 							type='text'
 							placeholder='johndoe'
 							className='w-full input input-bordered h-10'
@@ -62,6 +64,7 @@ const SignUp = () => {
 							<span className='text-base label-text'>Password</span>
 						</label>
 						<input
+							id="password"
 							type='password'
 							placeholder='Enter Password'
 							className='w-full input input-bordered h-10'
@@ -75,6 +78,7 @@ const SignUp = () => {
 							<span className='text-base label-text'>Confirm Password</span>
 						</label>
 						<input
+							id="confirmPassword"
 							type='password'
 							placeholder='Confirm Password'
 							className='w-full input input-bordered h-10'
@@ -87,6 +91,7 @@ const SignUp = () => {
 
 					<Link
 						to={"/login"}
+						id="signup"
 						className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'
 						href='#'
 					>
@@ -94,7 +99,7 @@ const SignUp = () => {
 					</Link>
 
 					<div>
-						<button className='btn btn-block btn-sm mt-2 border border-slate-700' disabled={loading}>
+						<button id="signup" className='btn btn-block btn-sm mt-2 border border-slate-700' disabled={loading}>
 							{loading ? <span className='loading loading-spinner'></span> : "Sign Up"}
 						</button>
 					</div>
